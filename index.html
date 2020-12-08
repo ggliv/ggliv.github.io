@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <title>ggliv's website</title>
+
+    <style>
+      body {
+        background-color:#f5f5f5;
+        margin-top:11%;
+        margin-bottom:auto;
+        opacity:1;
+        transition:0.7s opacity;
+      }
+      body.fade {opacity:0; transition:none;}
+      ul li {display:inline-block; padding-right:10px;}
+      .center {display:block; margin:auto; text-align:center;}
+      #circleimg {border-radius: 50% 50% 50% 50%;}
+    </style>
+  </head>
+
+  <body>
+    <script>document.body.classList.add('fade');</script>
+    <div style="top:0 !important; left:0 !important; position:absolute; width:100%; height:100%; z-index:-1; overflow:hidden;" id="tsparticles"></div>
+    <div>
+      <img src="images/avatar.png" alt="ggliv's profile picture" style="margin-bottom:15px; width:192px; height:192px;" class=center id="circleimg">
+      <h1 class=center style="font-family: Arial, Helvetica, sans-serif;">Hi. I'm Gabe.</h1>
+      <br>
+      <h3 class=center style="font-family: Arial, Helvetica, sans-serif;">Thanks for checking me out. <br> Here's where I am on the internet:</h3>
+      <br>
+      <ul class=center>
+        <li><a href="https://github.com/ggliv" target="_blank"><img src="images/gh-logo.png" alt="GitHub Logo" style="width:57px; height:57px;"></a></li>
+        <li><a href="m&#97;&#105;&#76;&#116;&#111;&#58;&#116;&#103;&#97;b&#101;&#108;&#105;&#118;&#101;n&#103;o&#111;&#100;&#64;g&#109;&#97;&#105;&#108;&#46;&#99;o&#109;"><img src="images/envelope.svg" alt="FontAwesome Envelope Icon" style="width:57px; height:57px;"></a></li>
+        <li></li>
+      </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.4/tsparticles.min.js" integrity="sha512-sRWg+eYUCQN5Tt2MbCmyXQUzwxWy8n4FD54R3SOJH8G9rjRCGcTNl1DI0eRmeTHS1KSPlJc4MVMlnZfQWily5w==" crossorigin="anonymous"></script>
+    <script>tsParticles.loadJSON('tsparticles', 'scripts/tsparticles/tsparticles-config.json', function() {console.log('callback - tsparticles config loaded');});</script>
+    <script>document.addEventListener("DOMContentLoaded",function(e){document.body.classList.remove('fade');});</script>
+  </body>
+</html>
