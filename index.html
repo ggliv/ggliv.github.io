@@ -1,129 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>gabe's site</title>
-	<link href="https://fonts.googleapis.com/css?family=Fredoka%20One" rel="stylesheet">
-	<meta name="theme-color" content="#282ed8"/>
-	<meta property="og:title" content="ggliv's site"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="https://ggliv.com"/>
-	<meta property="og:image" content="https://github.com/ggliv.png"/>
+	<meta charset="utf-8">
+	<title>Gabe Livengood</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<meta name="theme-color" content="#282ed8">
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#2987D9">
+	<meta property="og:title" content="Gabe Livengood">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ggliv.com">
+	<meta property="og:image" content="https://github.com/ggliv.png">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<style>
-		html, body {
-			margin: 0;
-			height: 100%;
-			min-height: 100%;
-		}
-
-		.colorbar {
-			background-color: #282ed8;
-			height: 1%;
-		}
-
-		body {
-			/* i get to make the rules and i say ~mandatory~ dark mode */
-			background-color: #0d1117;
-			color: #c9d1d9;
-		}
-		
-		.content {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 99%;
-			flex-direction: column;
-		}
-
-		.content > h1 {
-			font-family: "Fredoka One";
-		}
-
-		/*<stolen href="https://codepen.io/w3resource/pen/PoJMLQb">*/
-		.yoyo {
-			display: inline-block;
-			position: relative;
-		}
-
-		.yoyo:after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			transform: scaleX(0);
-			height: 2px;
-			bottom: 0;
-			left: 0;
-			background-color: #5294e2;
-			transform-origin: bottom right;
-			transition: transform 0.25s ease-out;
-		}
-
-		.yoyo:hover:after {
-			 transform: scaleX(1);
-			 transform-origin: bottom left;
-		}
-		/*</stolen>*/
-
-		.content > p {
-			font-family: Arial, Helvetica, sans-serif;
-			margin: 0;
-		}
-
-		.linklist {
-			display: inline-flex;
-			flex-direction: row;
-		}
-
-		.linklist > * {
-			flex: 1;
-			margin: 10px;
-		}
-
-		.linklist > a {
-			font-family: Arial, Helvetica, sans-serif;
-			color: #5186ca;
-			transition: color 500ms ease-out 100ms
-		}
-
-		.linklist > a:hover {
-			color: #5951ca;
-		}
-
-		footer {
-			position: fixed;
-			bottom: 0;
-			font-size: 50%;
-			text-align: center;
-			color: #242629;
-			user-select: none;
-		}
-	</style>
+	<link rel="stylesheet" href="styles/global.css">
 </head>
 
 <body>
-	<div class="colorbar"></div>
-
-	<div class="content">
-		<h1>
-			<span class="yoyo">yoyo.</span>
-			<br>
-			i'm gabe.
-		</h1>
-		<p>
-			here's where you can find me on the web
-		</p>
-		<div class="linklist">
-				<a href="https://github.com/ggliv" target="_blank" rel="noopener noreferrer">github</a>
-				<a href="https://gitlab.com/ggliv" target="_blank" rel="noopener noreferrer">gitlab</a>
-				<a href="https://www.linkedin.com/in/gabe-livengood-14851424a/" target="_blank" rel="noopener noreferrer">linkedin</a>
-				<a href="m&#97;&#105;&#76;&#116;&#111;&#58;&#116;&#103;&#97;b&#101;&#108;&#105;&#118;&#101;n&#103;o&#111;&#100;&#64;g&#109;&#97;&#105;&#108;&#46;&#99;o&#109;">email</a>
+<div class="content adaptive">
+	<div class="colorbar adaptive"></div>
+	<div class="self-intro">
+		<img src="images/profile_small.png" alt="profile shot of gabe livengood">
+		<div class="name-tag">
+			<p>Hey, I'm</p>
+			<b>Gabe Livengood</b>	
+		</div>
+		<div class="username-container adaptive">
+			<div class="username-bg"><b>(@ggliv)</b></div>
 		</div>
 	</div>
-
-	<footer>
-		todo: blog, resume, all that jazz. not much going on right now, but thanks for popping by :)
-	</footer>
+	<div class="self-details">
+		<p>
+			I'm a learner at heart interested in computing, mathematics, music, and the wider world around us.
+		</p>
+		<p>
+			Here's where else you can find me on the web:
+		</p>
+		<div class="link-list">
+			<a href="./blog/">Blog</a>
+			<a href="m&#97;&#105;&#76;&#116;&#111;&#58;&#116;&#103;&#97;b&#101;&#108;&#105;&#118;&#101;n&#103;o&#111;&#100;&#64;g&#109;&#97;&#105;&#108;&#46;&#99;o&#109;">Email</a>
+			<a href="https://github.com/ggliv">GitHub</a>
+			<a href="https://gitlab.com/ggliv">GitLab</a>
+			<a href="https://www.linkedin.com/in/gabe-livengood">LinkedIn</a>
+		</div>
+	</div>
+	<div class="colorbar adaptive"></div>
+</div>
 </body>
 </html>

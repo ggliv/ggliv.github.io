@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #c9d1d9;
+  background-color: #0d1117;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.colorbar {
+  background-color: #282ed8;
+  min-height: 1em;
+  min-width: 100%;
+  height: 1em;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.content > p {
+  margin: 0;
+}
+
+.self-intro {
+  margin-top: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  padding: 0 0.5em;
+}
+
+.self-intro > img {
+  width: 6.5em;
+  height: auto;
+  border-radius: 100%;
+  border: .25rem solid #7F7F7F;
+  background-color: #FFFAF5;
+}
+
+.name-tag > * {
+  margin: 0;
+}
+
+.self-intro > .username-container {
+  display: inline-block;
+  border-radius: .5rem;
+  font-size: .8em;
+  padding-top: .05rem;
+  padding-bottom: .05rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: #282ed8;
+  transform: rotate(-0.01turn);
+  font-family: Fredoka;
+}
+
+.self-details {
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.self-details > p {
+  margin: 1.5rem auto;
+  height: auto;
+  width: 75%;
+}
+
+.link-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.link-list > * {
+  flex: 1;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.link-list > a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5186ca;
+  transition: color 100ms ease-out 100ms
+}
+
+.link-list > a:hover {
+  color: #5951ca;
+}
+
+@font-face {
+  font-family: Fredoka;
+  src: url(./fonts/fredoka/Fredoka.ttf)
+}
+
+/* light mode changes */
+@media (prefers-color-scheme: light) {
+  .content.adaptive {
+    background-color: #c9d1d9;
+    color: #0d1117;
+  }
+
+  .self-intro > .username-container.adaptive {
+    color: #c9d1d9;
+    background-color: #2987D9;
+  }
+
+  .colorbar.adaptive {
+    background-color: #2987D9;
+  }
+}
