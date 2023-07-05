@@ -107,7 +107,7 @@ body {
 
 /* light mode changes */
 @media (prefers-color-scheme: light) {
-  .content.adaptive {
+  body.adaptive {
     background-color: #C9D1D9;
     color: #0D1117;
   }
