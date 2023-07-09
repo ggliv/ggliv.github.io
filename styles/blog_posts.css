@@ -1,0 +1,33 @@
+:root {
+  --dark-color-bg: #121212;
+  --dark-color: #D3CFCA;
+  --dark-color-a: lightskyblue;
+  --dark-color-a-visited: mediumpurple;
+}
+
+body {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: .5em 1em 1em 1em;
+  background-color: var(--dark-color-bg);
+  color: var(--dark-color);
+}
+
+a {
+  color: var(--dark-color-a);
+}
+
+a:visited {
+  color: var(--dark-color-a-visited);
+}
+
+@media (prefers-color-scheme: light) {
+  body.adaptive {
+    background: revert;
+    color: revert;
+  }
+
+  body.adaptive * {
+    color: revert;
+  }
+}
