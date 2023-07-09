@@ -21,6 +21,10 @@ a:visited {
   color: var(--dark-color-a-visited);
 }
 
+p + p {
+  text-indent: 2em;
+}
+
 @media (prefers-color-scheme: light) {
   body.adaptive {
     background: revert;
