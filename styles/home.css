@@ -8,6 +8,18 @@ body {
   color: #C9D1D9;
   background-color: #0D1117;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.colorbar:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.colorbar:last-of-type {
+  margin-top: 1.5rem;
 }
 
 .colorbar {
@@ -16,18 +28,6 @@ body {
   min-width: 100%;
   height: 1em;
   width: 100%;
-}
-
-.content {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.content > p {
-  margin: 0;
 }
 
 .self-intro {
@@ -53,7 +53,7 @@ body {
   margin: 0;
 }
 
-.self-intro > .username-container {
+.username-container {
   display: inline-block;
   border-radius: .5rem;
   font-size: .8em;
