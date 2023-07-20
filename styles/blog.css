@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Jetbrains Mono";
+  src: url(./fonts/jetbrains-mono/JetBrainsMono-Regular.woff2)
+}
+
 :root {
   --dark-color-bg: #121212;
   --dark-color: #D3CFCA;
@@ -24,6 +29,10 @@ a:visited {
 
 p + p {
   text-indent: 2em;
+}
+
+pre.code {
+  font: 0.8em "Jetbrains Mono", monospace;
 }
 
 @media (prefers-color-scheme: light) {
