@@ -11,6 +11,7 @@ body {
   padding: .5em 1em 1em 1em;
   background-color: var(--dark-color-bg);
   color: var(--dark-color);
+  font: 1.2em Georgia, "Times New Roman", serif;
 }
 
 a {
