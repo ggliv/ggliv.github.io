@@ -63,7 +63,7 @@ body {
   padding-right: .5rem;
   background-color: #282ED8;
   transform: rotate(-0.01turn);
-  font-family: Fredoka;
+  font-family: Fredoka, sans-serif;
 }
 
 .self-details {
