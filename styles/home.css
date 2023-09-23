@@ -71,26 +71,23 @@ body {
   text-align: center;
   font-size: 1.25em;
 }
+.self-details > p, .link-list {
+  max-width: 75%;
+}
 
 .self-details > p {
   margin: 1.5rem auto;
-  height: auto;
-  width: 75%;
 }
 
 .link-list {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-.link-list > * {
-  flex: 1;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  justify-content: center;
 }
 
 .link-list > a {
+  margin: 0.25em;
   font-family: Arial, Helvetica, sans-serif;
   color: #5186CA;
   transition: color 100ms ease-out 100ms
@@ -119,5 +116,12 @@ body {
 
   .colorbar.adaptive {
     background-color: #2987D9;
+  }
+}
+
+/* reduce text gutters on low-resolution viewports */
+@media (max-width: 600px) {
+  .self-details > p, .link-list {
+    max-width: 90%;
   }
 }
