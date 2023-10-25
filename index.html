@@ -23,7 +23,23 @@
   <div class="self-intro">
     <img src="images/profile_small.png" alt="profile shot of gabe livengood">
     <div class="name-tag">
-      <p>Hey, I'm</p>
+      <script>
+        // randomize the greeting for some ~spice~
+        let greetings = ["Hey", "Howdy", "Sup", "Hi", "Yo", "Hello", "Heya"]
+        // add some time-relative greetings too
+        let hour = new Date().getHours()
+        if (hour >= 5 && hour <= 11) {
+          greetings.push("Morning")
+        } else if (hour >= 12 && hour <= 17) {
+          greetings.push("Afternoon")
+        } else if (hour >= 18 && hour <= 23) {
+          greetings.push("Evening")
+        }
+        window.onload = function() {
+          document.getElementById("greeting").innerHTML = greetings[Math.floor(Math.random() * greetings.length)]
+        }
+      </script>
+      <p><span id="greeting"><noscript>Hey</noscript></span>, I'm</p>
       <b>Gabe Livengood</b>
     </div>
     <div class="username-container adaptive">
