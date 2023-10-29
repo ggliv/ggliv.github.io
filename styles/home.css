@@ -43,6 +43,7 @@ body {
 
 .self-intro > img {
   width: 6.5em;
+  max-width: 100%;
   height: auto;
   border-radius: 100%;
   border: .25rem solid #7F7F7F;
