@@ -24,20 +24,21 @@
     <img src="images/profile_small.png" alt="profile shot of gabe livengood">
     <div class="name-tag">
       <script>
-        // randomize the greeting for some ~spice~
+      {
+        // use a random greeting on every page load
         let greetings = ["Hey", "Howdy", "Sup", "Hi", "Yo", "Hello", "Heya"]
-        // add some time-relative greetings too
-        let hour = new Date().getHours()
-        if (hour >= 5 && hour <= 11) {
+        let h = new Date().getHours()
+        if (5 <= h && h <= 11) {
           greetings.push("Morning")
-        } else if (hour >= 12 && hour <= 17) {
+        } else if (12 <= h && h <= 17) {
           greetings.push("Afternoon")
-        } else if (hour >= 18 && hour <= 23) {
+        } else if (18 <= h && h <= 23) {
           greetings.push("Evening")
         }
-        window.onload = function() {
-          document.getElementById("greeting").innerHTML = greetings[Math.floor(Math.random() * greetings.length)]
-        }
+        window.addEventListener("load", () =>
+          document.getElementById("greeting").innerText = greetings[Math.floor(Math.random() * greetings.length)]
+        )
+      }
       </script>
       <p><span id="greeting"><noscript>Hey</noscript></span>, I'm</p>
       <b>Gabe Livengood</b>
