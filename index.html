@@ -10,21 +10,22 @@
 
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#282ED8">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2987D9">
+    <meta name="description" content="Gabe Livengood's personal website.">
+    <meta property="og:site_name" content="Gabe Livengood">
     <meta property="og:title" content="Gabe Livengood">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://github.com/ggliv.png">
     <meta property="og:url" content="https://ggliv.com">
-    <meta property="og:description" content="My website! Includes links to the rest of my internet presence and a blog.">
+    <meta property="og:description" content="Gabe Livengood's personal website.">
   </head>
 
-  <body class="adaptive">
-    <div class="colorbar adaptive"></div>
+  <body>
+    <div class="colorbar"></div>
     <div class="self-intro">
       <img src="images/profile_small.png" alt="profile shot of gabe livengood">
       <div class="name-tag">
         <script>
           {
-            // use a random greeting on every page load
             let greetings = ["Hey", "Howdy", "Sup", "Hi", "Yo", "Hello", "Heya"]
             let h = new Date().getHours()
             if (5 <= h && h <= 11) {
@@ -42,22 +43,21 @@
         <p><span id="greeting"><noscript>Hey</noscript></span>, I'm</p>
         <b>Gabe Livengood</b>
       </div>
-      <div class="username-container adaptive">
+      <div class="username-container">
         <div class="username-bg"><b>(@ggliv)</b></div>
       </div>
     </div>
     <div class="self-details">
       <p>
-      I'm a learner at heart interested in computing, mathematics, music, and the wider world around us.
+      I'm a hacker at heart interested in computing, mathematics, music, and the wider world around us.
       </p>
-      <div class="link-list">
-        <a href="./blog/">Blog</a>
-        <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#097;&#098;&#101;&#064;&#103;&#103;&#108;&#105;&#118;&#046;&#099;&#111;&#109;">Email</a>
-        <a href="https://github.com/ggliv">GitHub</a>
-        <a href="https://gitlab.com/ggliv">GitLab</a>
-        <a href="https://www.linkedin.com/in/gabe-livengood">LinkedIn</a>
-      </div>
+      <ul class="link-list">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#097;&#098;&#101;&#064;&#103;&#103;&#108;&#105;&#118;&#046;&#099;&#111;&#109;">Email</a></li>
+        <li><a href="https://github.com/ggliv">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gabe-livengood">LinkedIn</a></li>
+      </ul>
     </div>
-    <div class="colorbar adaptive"></div>
+    <div class="colorbar"></div>
   </body>
 </html>

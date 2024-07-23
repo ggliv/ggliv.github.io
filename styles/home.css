@@ -1,12 +1,24 @@
-html, body {
+:root {
+  --main-color: #282ED8;
+  --bg-color: #0D1117;
+  --text-color: #C9D1D9;
+  --username-color: var(--text-color);
+  --link-color: #5186CA;
+}
+
+* {
   margin: 0;
+  padding: 0;
+}
+
+html, body {
   width: 100%;
   height: 100%;
 }
 
 body {
-  color: #C9D1D9;
-  background-color: #0D1117;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   gap: 1rem;
@@ -23,11 +35,9 @@ body {
 }
 
 .colorbar {
-  background-color: #282ED8;
+  background-color: var(--main-color);
   min-height: 1em;
   min-width: 100%;
-  height: 1em;
-  width: 100%;
 }
 
 .self-intro {
@@ -41,17 +51,13 @@ body {
   padding: 0 0.5em;
 }
 
-.self-intro > img {
+.self-intro img {
   width: 6.5em;
   max-width: 100%;
   height: auto;
   border-radius: 100%;
-  border: .25rem solid #7F7F7F;
-  background-color: #FFFAF5;
-}
-
-.name-tag > * {
-  margin: 0;
+  border: 4px solid gray;
+  background-color: white;
 }
 
 .username-container {
@@ -62,7 +68,8 @@ body {
   padding-bottom: .05rem;
   padding-left: .5rem;
   padding-right: .5rem;
-  background-color: #282ED8;
+  color: var(--username-color);
+  background-color: var(--main-color);
   transform: rotate(-0.01turn);
   font-family: Fredoka, sans-serif;
 }
@@ -72,11 +79,12 @@ body {
   text-align: center;
   font-size: 1.25em;
 }
-.self-details > p, .link-list {
+
+.self-details > * {
   max-width: 75%;
 }
 
-.self-details > p {
+.self-details p {
   margin: 1.5rem auto;
 }
 
@@ -87,15 +95,14 @@ body {
   justify-content: center;
 }
 
-.link-list > a {
-  margin: 0.25em;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #5186CA;
-  transition: color 100ms ease-out 100ms
+.link-list {
+  list-style-type: none;
 }
 
-.link-list > a:hover {
-  color: #5951CA;
+a {
+  margin: 0.25em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--link-color);
 }
 
 @font-face {
@@ -105,24 +112,18 @@ body {
 
 /* light mode changes */
 @media (prefers-color-scheme: light) {
-  body.adaptive {
-    background-color: #C9D1D9;
-    color: #0D1117;
-  }
-
-  .self-intro > .username-container.adaptive {
-    color: #FFFAF5;
-    background-color: #2987D9;
-  }
-
-  .colorbar.adaptive {
-    background-color: #2987D9;
+  :root {
+    --main-color: #2987D9;
+    --bg-color: #F2EEE8;
+    --text-color: #0D1117;
+    --username-color: #FFFAF5;
+    --link-color: #2364BA;
   }
 }
 
-/* reduce text gutters on low-resolution viewports */
+/* reduce text gutters on thinner viewports */
 @media (max-width: 600px) {
-  .self-details > p, .link-list {
+  .self-details > * {
     max-width: 90%;
   }
 }
