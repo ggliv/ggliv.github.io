@@ -1,63 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gabe Livengood</title>
+    <title>Gabe Livengood</title>
 
-  <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home.css">
 
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#282ED8">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2987D9">
-  <meta property="og:title" content="Gabe Livengood">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://github.com/ggliv.png">
-  <meta property="og:url" content="https://ggliv.com">
-  <meta property="og:description" content="My website! Includes links to the rest of my internet presence and a blog.">
-</head>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#282ED8">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2987D9">
+    <meta property="og:title" content="Gabe Livengood">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/ggliv.png">
+    <meta property="og:url" content="https://ggliv.com">
+    <meta property="og:description" content="My website! Includes links to the rest of my internet presence and a blog.">
+  </head>
 
-<body class="adaptive">
-  <div class="colorbar adaptive"></div>
-  <div class="self-intro">
-    <img src="images/profile_small.png" alt="profile shot of gabe livengood">
-    <div class="name-tag">
-      <script>
-      {
-        // use a random greeting on every page load
-        let greetings = ["Hey", "Howdy", "Sup", "Hi", "Yo", "Hello", "Heya"]
-        let h = new Date().getHours()
-        if (5 <= h && h <= 11) {
-          greetings.push("Morning")
-        } else if (12 <= h && h <= 17) {
-          greetings.push("Afternoon")
-        } else if (18 <= h && h <= 23) {
-          greetings.push("Evening")
-        }
-        window.addEventListener("load", () =>
-          document.getElementById("greeting").innerText = greetings[Math.floor(Math.random() * greetings.length)]
-        )
-      }
-      </script>
-      <p><span id="greeting"><noscript>Hey</noscript></span>, I'm</p>
-      <b>Gabe Livengood</b>
+  <body class="adaptive">
+    <div class="colorbar adaptive"></div>
+    <div class="self-intro">
+      <img src="images/profile_small.png" alt="profile shot of gabe livengood">
+      <div class="name-tag">
+        <script>
+          {
+            // use a random greeting on every page load
+            let greetings = ["Hey", "Howdy", "Sup", "Hi", "Yo", "Hello", "Heya"]
+            let h = new Date().getHours()
+            if (5 <= h && h <= 11) {
+              greetings.push("Morning")
+            } else if (12 <= h && h <= 17) {
+              greetings.push("Afternoon")
+            } else if (18 <= h && h <= 23) {
+              greetings.push("Evening")
+            }
+            window.addEventListener("load", () =>
+              document.getElementById("greeting").innerText = greetings[Math.floor(Math.random() * greetings.length)]
+            )
+          }
+        </script>
+        <p><span id="greeting"><noscript>Hey</noscript></span>, I'm</p>
+        <b>Gabe Livengood</b>
+      </div>
+      <div class="username-container adaptive">
+        <div class="username-bg"><b>(@ggliv)</b></div>
+      </div>
     </div>
-    <div class="username-container adaptive">
-      <div class="username-bg"><b>(@ggliv)</b></div>
-    </div>
-  </div>
-  <div class="self-details">
-    <p>
+    <div class="self-details">
+      <p>
       I'm a learner at heart interested in computing, mathematics, music, and the wider world around us.
-    </p>
-    <div class="link-list">
-      <a href="./blog/">Blog</a>
-      <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#097;&#098;&#101;&#064;&#103;&#103;&#108;&#105;&#118;&#046;&#099;&#111;&#109;">Email</a>
-      <a href="https://github.com/ggliv">GitHub</a>
-      <a href="https://gitlab.com/ggliv">GitLab</a>
-      <a href="https://www.linkedin.com/in/gabe-livengood">LinkedIn</a>
+      </p>
+      <div class="link-list">
+        <a href="./blog/">Blog</a>
+        <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#103;&#097;&#098;&#101;&#064;&#103;&#103;&#108;&#105;&#118;&#046;&#099;&#111;&#109;">Email</a>
+        <a href="https://github.com/ggliv">GitHub</a>
+        <a href="https://gitlab.com/ggliv">GitLab</a>
+        <a href="https://www.linkedin.com/in/gabe-livengood">LinkedIn</a>
+      </div>
     </div>
-  </div>
-  <div class="colorbar adaptive"></div>
-</body>
+    <div class="colorbar adaptive"></div>
+  </body>
 </html>
