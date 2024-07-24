@@ -71,7 +71,7 @@ body {
   color: var(--username-color);
   background-color: var(--main-color);
   transform: rotate(-0.01turn);
-  font-family: Fredoka, sans-serif;
+  font-family: username, sans-serif;
 }
 
 .self-details {
@@ -106,8 +106,10 @@ a {
 }
 
 @font-face {
-  font-family: Fredoka;
-  src: url(./fonts/fredoka/Fredoka.ttf)
+  font-family: username;
+  src: url(./fonts/username/username.woff2);
+  font-weight: bold;
+  font-display: swap;
 }
 
 /* light mode changes */
