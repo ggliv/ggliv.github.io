@@ -35,7 +35,7 @@
             } else if (18 <= h && h <= 23) {
               greetings.push("Evening")
             }
-            window.addEventListener("load", () =>
+            window.addEventListener("DOMContentLoaded", () =>
               document.getElementById("greeting").innerText = greetings[Math.floor(Math.random() * greetings.length)]
             )
           }
