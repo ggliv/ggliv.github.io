@@ -1,9 +1,9 @@
 :root {
   --main-color: #282ED8;
-  --bg-color: #0D1117;
-  --text-color: #C9D1D9;
+  --bg-color: #111827;
+  --text-color: #F3F4F6;
   --username-color: var(--text-color);
-  --link-color: #5186CA;
+  --link-color: #93C5FD;
 }
 
 * {
@@ -117,10 +117,10 @@ a {
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: #2987D9;
-    --bg-color: #F2EEE8;
-    --text-color: #0D1117;
-    --username-color: #FFFAF5;
-    --link-color: #2364BA;
+    --bg-color: #F3F4F6;
+    --text-color: #111827;
+    --username-color: #F3F4F6;
+    --link-color: #1D4ED8;
   }
 }
 
